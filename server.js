@@ -9,11 +9,11 @@ dotenv.config();
 const serverPort = process.env.PORT || 3001;
 
 app.get("/", (req, res) => {
-    res.send("🏎️ Pista Online!");
+  res.send("🏎️ Pista Online!");
 });
 
 app.use("/carros", carrosRoutes);
 
 app.listen(serverPort, () => {
-    console.log(`🏎️ Server ON! http://localhost:${serverPort}`);
+  console.log(`🏎️ Server ON! http://localhost:${serverPort}`);
 });
